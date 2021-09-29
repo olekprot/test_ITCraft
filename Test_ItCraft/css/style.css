@@ -1,0 +1,134 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    color: white;
+    background-color: black;
+    font-family: 'Birthstone', cursive;
+    font-family: 'Grechen Fuemen', cursive;
+}
+header,
+footer{
+    text-align: center;
+}
+
+.notes {
+    display: flex;
+    height: 100%;
+}
+
+.notes_sidebar {
+    border-right: 2px solid #dddddd;
+    flex-shrink: 0;
+    overflow-y: auto;
+    padding: 1em;
+    width: 300px;
+}
+
+.notes_add,
+.notes_save {
+    background: black;
+    border: 3px solid white;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+    width: 75%;
+}
+
+.notes_add:hover,
+.notes_save:hover {
+    background: white;
+    color: black;
+}
+
+.notes_list-item {
+    cursor: pointer;
+    border: 3px solid white;
+    margin-bottom: 10px;
+    padding: 5px 3px;
+}
+
+.notes_list-item--selected {
+    background: white;
+    color: black;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.notes_small-title,
+.notes_small-updated {
+    padding: 10px;
+}
+
+.notes_small-title {
+    font-size: 1.2em;
+}
+
+.notes_small-body {
+    padding: 0 10px;
+}
+
+.notes_small-updated {
+    color: #aaaaaa;
+    font-style: italic;
+    text-align: right;
+}
+
+.notes_preview {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+    flex-grow: 1;
+}
+.notes_main{
+    border: 3px solid white;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.notes_title,
+.notes_body {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+}
+
+.notes_title {
+    font-size: 1em;
+    width: 75%;
+}
+
+.notes_body {
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 2em;
+    resize: none;
+    height: 350px;
+
+}
+.buttons_sort{
+    margin-bottom: 25px;
+}
+.title_search{
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    width: 75%;
+}
+.delete_button{
+    width: 20%;
+    color: white;
+    background-color: black;
+    border: 3px solid white;
+}
+.delete_button:hover{
+    background: white;
+    color: black;
+}
